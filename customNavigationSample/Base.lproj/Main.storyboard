@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lX6-zz-fsd">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="dmL-55-8z4">
+            <objects>
+                <navigationController id="lX6-zz-fsd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YtV-Hb-Nub">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="gLE-04-r5L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSR-Ql-MdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-622" y="-422"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="customNavigationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="jRe-Oe-9AK">
+                                <rect key="frame" x="-82" y="0.0" width="682" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jRe-Oe-9AK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-98" id="Lh8-kX-xRb"/>
+                            <constraint firstItem="jRe-Oe-9AK" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="aFh-wo-Aqe"/>
+                            <constraint firstItem="jRe-Oe-9AK" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="cAG-Ol-rxA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jRe-Oe-9AK" secondAttribute="trailing" constant="-16" id="j2n-EI-724"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Shr-fk-s6K">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="dGv-f3-H7C"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="rightBarButtonItem" destination="dGv-f3-H7C" id="Mtm-0L-BkG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="-422"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="640" height="426"/>
+    </resources>
+</document>
