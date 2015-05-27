@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // ナビゲーションバー
         // 背景を透明にする
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage.new(), forBarMetrics: UIBarMetrics.Default)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage.new(), forBarMetrics: .Default)
         self.navigationController!.navigationBar.shadowImage = UIImage.new()
         
         // タイトル画像
